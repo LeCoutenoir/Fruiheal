@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <style> 
+    
+     /* Big device */
+        @media(min-width: 1300px) {
+           #wholepage{
+           width:1305px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+        
+        /* Medium device */
+        @media(max-width: 1299px) {
+           #wholepage{
+           width:800px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+        
+        /* Small device */
+        @media(max-width: 600px) {
+            #wholepage{
+           width:588px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+    
+    header {
+    background-color: rgb(49, 133, 0);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+        form {
+            width: 60%;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            padding: 0 15px;
+            color: white;
+        }
+
+        label>span {
+            display: block;
+            margin-bottom: 5px;
+            padding-left: 6px;
+            font-size: 12px;
+        }
+
+        label.checkbox {
+            display: inline-block;
+        }
+
+        label.checkbox:hover>.znacznik {
+            background-color: dodgerblue;
+        }
+
+        label.checkbox input {
+            display: none;
+        }
+
+        label.checkbox>span {
+            display: inline;
+            margin: 0;
+            padding-left: 0;
+            font-size: 16px;
+        }
+
+        label.checkbox>.znacznik {
+            position: relative;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            border-radius: 6px;
+        }
+
+        label.checkbox>.znacznik::after {
+            content: '';
+            display: none;
+            position: absolute;
+            border: 3px solid #fff;
+            border-top-width: 0;
+            border-left-width: 0;
+            width: 5px;
+            height: 10px;
+            left: 50%;
+            top: 50%;            
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+
+        label.checkbox input:checked + .znacznik {
+            background-color: dodgerblue;
+        }
+
+        label.checkbox input:checked + .znacznik::after {
+            display: block;
+        }
+
+
+
+        input[type=text], 
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        select {
+            background: #f0f0f0;
+            border: 1px solid #999;
+            padding: 6px;
+            border-radius: 6px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+
+        input[type=text]:focus, 
+        input[type=email]:focus,
+        input[type=number]:focus,
+        input[type=password]:focus,
+        select:focus {
+            background: #fff;
+            border-color: dodgerblue;
+            box-shadow: 0 0 4px rgba(0,0,0,.4);
+        }
+        input[type="text"]::placeholder, 
+        input[type=email]::placeholder,
+        input[type=number]::placeholder {
+            font-style: italic;
+            color: #949494;
+        }
+
+        input[type=reset],
+        button {
+            background: rgb(180, 90, 0);
+            border: 1px solid #999;
+            padding: 6px;
+            border-radius: 6px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        input[type=submit],
+        button {
+            background: rgb(100, 100, 0);
+            border: 1px solid #999;
+            padding: 6px;
+            border-radius: 6px;
+            font-size: 18px;
+            color: white;
+        } 
+
+        input[type=reset]:focus,
+        button:focus {
+            background: limegreen;
+            border-color: rgb(100, 62, 124);
+            color: #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,.4);
+        }
+        
+        input[type=submit]:focus,
+        button:focus {
+            background: limegreen;
+            border-color: rgb(1, 62, 124);
+            color: #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,.4);
+        }
+
+        .kolumny {
+            display: flex;
+            justify-content: space-between;
+        }
+        .kolumny>label {
+            flex-grow: 1;
+        }
+        
+        .footer {
+    background-color: rgb(49, 133, 0);
+    padding: 110px;
+    color: white;
+    text-align: left;
+        }
+        
+        body {
+  background-color: rgb(100, 170, 0);
+  }
+        
+    </style>
+</head>
+<body>
+<header>
+<img src="Logo.png">
+<h1>Formularz</h1>
+<p></p>
+<div class="grid-container">
+</header>
+    <form action="">
+        <p>
+            <label>
+                <span>Imię i nazwisko</span>
+                <input type="text" name="imie i nazwisko" placeholder="Gaspard Forgeron">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="@gmail.com">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>Numer telefonu</span>
+                <input type="number" name="telefon" placeholder="06-23-12-45-54">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>Wiek</span>
+                <input type="number" name="Wiek" placeholder="18">
+            </label>
+        </p>
+        <p class="kolumny">
+        </p>
+        <p class="kolumny">
+            <label>
+                <input type="radio" name="radio"> Mężczyzna
+                <input type="radio" name="radio"> Kobieta
+                <input type="radio" name="radio"> Inna
+                </label>
+        </p>
+        <label>
+        <p>
+            <span>Twoja wiadomość</span>
+            <input type="text" name="wiadomosc">
+            Wprowadź swoją wiadomość.
+            </label>            
+        </p>
+        <p>
+            <label>
+                <input type="checkbox"> Zapoznałem/łam się z regulaminem rejestracji 
+            </label>
+            <label>
+            <p>
+            <input type="submit" value="Zarejestruj">
+            <input type="reset" value="resetuj">
+            </p>
+            </label>
+        </p>
+    </form>
+    <div class="footer">
+     <h1><a href="Index.html">Powrot do menu</a></h1> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fruiheal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+
+/* Big device */
+        @media(min-width: 1300px) {
+           #wholepage{
+           width:1305px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+        
+        /* Medium device */
+        @media(max-width: 1299px) {
+           #wholepage{
+           width:800px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+        
+        /* Small device */
+        @media(max-width: 600px) {
+            #wholepage{
+           width:588px;
+           margin-left:auto;
+           margin-right:auto;
+            }             
+        }
+
+header {
+    background-color: rgb(49, 133, 0);
+    padding: 10px;
+    color: white;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap 10px;
+    grid-roz-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .itemain {
+    background-color: rgb(100, 125, 0);
+    width: 6000px;
+    padding: 150px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    }
+    
+    .itemainphoto1 {
+    background-image:url('pexels-oliver-schulz-5725771.jpg');
+    background-color:black;
+    width: 100x;
+    padding: 100px;
+    }
+    
+    .itemainphoto2 {
+    background-image:url('pexels-mike-1171084.jpg');
+    background-color:black;
+    width: 100px;
+    padding: 100px;
+    }
+    
+    .itemainphoto3 {
+    background-image:url('pexels-rauf-allahverdiyev-1367242.jpg');
+    background-color:black;
+    width: 100px;
+    padding: 100px;
+    }
+    
+    .itemainphoto4 {
+    background-image:url('pexels-pixabay-71104.jpg');
+    background-color:black;
+    width: 100px;
+    padding: 100px;
+    }
+    
+    .itemainphoto5 {
+    background-image:url('pexels-daria-shevtsova-4117550.jpg');
+    background-color:black;
+    width: 100px;
+    padding: 100px;
+    }
+    
+    .itemainphoto6 {
+    background-image:url('pexels-pixabay-47730.jpg');
+    background-color:black;
+    width: 100px;
+    padding: 100px;
+    }
+    
+    .grid-container {
+    background-color: rgb(100, 170, 0);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap 10px;
+    grid-roz-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .footer {
+    background-color: rgb(49, 133, 0);
+    padding: 100px;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style> 
+</head>
+<body>
+<header>
+<img src="Logo.png">
+<h1>Fruiheal</h1>
+<h2>Tematyka zdrowego odżywiania i aktywności fizycznej</h2>
+<p></p>
+<form name="Tick">
+<input type="text" size="11" name="Clock">
+</form>
+<script>
+<!--
+function show(){
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn=""
+if (hours>24){
+dn=""
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+document.Tick.Clock.value=hours+":"+minutes+":"
++seconds+" "+dn
+setTimeout("show()",1000)
+}
+show()
+//-->
+</script>
+<div class="grid-container">
+<div class="itemainphoto1"></div>
+<div class="itemainphoto2"></div>
+<div class="itemainphoto3"></div>
+<div class="itemainphoto4"></div>
+<div class="itemainphoto5"></div>
+<div class="itemainphoto6"></div>
+</header>
+<div class="grid-container">
+<div class="itemain">
+<h2><a href="article1.html">Artykuł 1 - Zdrowe odżywianie</a></h2>
+<h2><a href="article2.html">Artykuł 2 - Aktywność fizyczna</a></h2>
+<h2><a href="article3.html">Artykuł 3 - Zasady prawidłowej diety </a></h2>
+<h2><a href="article4.html">Artykuł 4 - Zasady prawidłowego ćwiczenia</a></h2>
+<h2><a href="galerie.html">Galeria</a></h2> 
+<h2><a href="forme.html">Formularz</a></h2>
+<h2><a href="sources.html">Źródła</a></h2>
+
+<form action="https://google.com">
+    <input type="submit" value="Go to Google" />
+</form>
+
+</div>
+
+<div class="footer">
+ <h3>Portale Społecznościowe</h3>
+ <b>
+ <a href="https://www.facebook.com">
+<img src="Facebook.png">
+</a> 
+<b>
+ <a href="https://www.youtube.com">
+<img src="Youtube.png">
+<b>
+<a href="https://www.instagram.com">
+<img src="Instagram.png">
+<b>
+<a href="https://twitter.com">
+<img src="Twitter.png">
+<b>
+<a href="https://www.pinterest.com">
+<img src="Pinterest.png">
+</a> 
+</div>
+
+
+</body>
+</html>
